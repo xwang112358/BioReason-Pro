@@ -16,15 +16,15 @@ GO-GPT is a decoder-only transformer-based model for predicting Gene Ontology (G
 git clone <repository-url>
 cd gogpt
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate
+# Create and activate virtual environment
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
-**Requirements**: Python 3.10+, PyTorch 2.0+, CUDA-capable GPU (recommended)
+**Requirements**: Python 3.10+, PyTorch 2.0+, CUDA-capable GPU (recommended), [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 ## Project Structure
 
