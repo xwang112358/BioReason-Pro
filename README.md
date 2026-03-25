@@ -70,6 +70,7 @@ Model weights are available on our [HuggingFace collection](https://huggingface.
 ### Prerequisites
 - Python 3.11+
 - CUDA/GPU for best performance
+- [uv](https://docs.astral.sh/uv/getting-started/installation/) package manager
 
 ### Installation Steps
 ```bash
@@ -77,8 +78,12 @@ Model weights are available on our [HuggingFace collection](https://huggingface.
 git clone https://github.com/bowang-lab/BioReason-Pro.git
 cd BioReason-Pro
 
+# Create and activate virtual environment
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
 # Install package
-pip install -e .
+uv pip install -e .
 ```
 
 <br>
